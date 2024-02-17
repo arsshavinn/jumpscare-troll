@@ -1,0 +1,55 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<title>Jumpscare</title>
+<meta property="og:title" content="Arda">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div id="overlay" class="overlay">
+<div class="overlay-body">
+<p class="overlay-title">Çerezler</p>
+<p class="overlay-description">
+    Bu site çerezleri kullanır,
+    Optimum performans için bu çerezlere ihtiyacınız var.<br>
+    Optimum performans için lütfen çerezleri <b>kabul edin</b>.
+<br>
+
+</p>
+<div class="overlay-buttons-wrapper">
+<div id="accept-button" class="overlay-button">Kabul Et</div>
+<div id="decline-button" class="overlay-button">Reddet</div>
+</div>
+</div>
+</div>
+<div class="scare">
+<video id="video" class="video" onloadstart="this.volume=1" src="https://arda1.netlify.app/FicR_video.mp4" loop></video>
+</div>
+<script src="script.js"></script>
+
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(["setCookieDomain", "*.arshavnetlify.app"]);
+  _paq.push(["setDomains", ["*.arshav.netlify.app"]]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//analytics.panda-network.de/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '4']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+</body>
+</html>
